@@ -1,0 +1,24 @@
+.root{
+    -fx-background-color: #ADD8E6;
+}
+.mainPane{
+    -fx-background-color: linear-gradient(to bottom right,#50ffd3,#6A5ACD);
+    -fx-background-radius: 15 15 25 25;
+}
+.mainButton{
+    -fx-background-color: #708090;
+    -fx-background-radius: 28;
+}
+.button{
+    -fx-background-color: #ff9900;
+    -fx-background-radius: 30;
+}
+.button:hover{
+    -fx-background-color: #ffff00;
+    -fx-background-radius: 30;
+}
+.button:pressed{
+    -fx-background-color: #e6e600;
+    -fx-background-radius: 30;
+}
+

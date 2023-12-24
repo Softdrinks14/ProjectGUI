@@ -1,41 +1,49 @@
 package org.example.rsagui;
 
+import javafx.scene.control.Alert;
+
+import java.io.*;
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class Encryption {
-    public static void startEncryption(){
-        BigInteger e = new BigInteger("65537"); // jangan diubah, ini bilangan prima euler default yang biasa dipakai di RSA
-        String text = "Lanjutkanbosku.."; // -> text yang akan dienkripsi maksimal 1024 character
+    public static void startEncryption() throws IOException {
 
-        if (text.length() > 1024) {
-            System.err.println("Ukuran text yang bisa dienkripsi adalah 1024 kata");
-            return;
+        File inputText = new File("inputRsa.txt");
+        BigInteger e = new BigInteger("65537"); // jangan diubah, ini bilangan prima euler default yang biasa dipakai di RSA
+
+        // Konversi List<Byte> ke byte[]
+        List<Byte> byteList = readFileByte(inputText);
+        if (byteList.size() <= 0){
+            showFileIsNull();
         }
-        if (text.length() <= 0) {
-            System.err.println("Text is null!!!, input dulu...");
-            return;
+
+        if (byteList.size() > 1020){
+            showContentToBig();
+        }
+
+        byte[] byteArray = new byte[byteList.size()];
+        for (int i = 0; i < byteList.size(); i++) {
+            byteArray[i] = byteList.get(i);
         }
 
         try {
-            encrypt(text, e);
+            encrypt(byteArray, e);
         } catch (Exception error) {
-            System.out.println(error.getMessage());
-            return;
+            showException(error.getMessage());
         }
     }
 
     // methode untuk enkripsi
-    private static void encrypt(String text, BigInteger e) throws IOException{
+    private static void encrypt(byte[] text, BigInteger e) throws IOException{
         BigInteger p, q, n, ciphertext, plaintext; // ciphertext adalah nilai yang dihasilkan dari proses enkripsi
         // plaintext adalah nilai pesan yang akan dilakukan enkripsi
         int bitLength;
 
-        plaintext = new BigInteger(text.getBytes()); // ubah string menjadi bytes
+        plaintext = new BigInteger(text); // ubah string menjadi bytes
         bitLength = plaintext.bitLength();
-        System.out.println("bitlength : " + bitLength);
 
         // membangkitkan nilai prima p dan q dengan acuan bitLength text yang akan dienkripsi
         p = generateLargePrime((bitLength / 2) + 7);
@@ -48,18 +56,76 @@ public class Encryption {
         ciphertext = plaintext.modPow(e, n);
 
         // output file
-        FileWriter file = new FileWriter("output.txt");
-        file.write("ciphertext : " + ciphertext);
+        FileWriter file = new FileWriter("outputRsa.txt");
+        file.write("\np value    : " + p);
+        file.write("\nciphertext (m) : " + ciphertext);
         file.write("\ne value    : " + e);
         file.write("\nn value    : " + n);
-        file.write("\np value    : " + p);
         file.close();
-        System.out.println("Text anda berhasil dienkripsi");
+        showSuccessEncryption();
     }
 
     // fungsi untuk generate bilangan Prima dengan random
     private static BigInteger generateLargePrime(int bitLength) {
         Random random = new Random();
         return BigInteger.probablePrime(bitLength, random);
+    }
+    private static void fileNotFound(){
+        String contentAlert = "File \"inputRsa.txt\" Tidak ditemukan\nHarap ikuti instruksinya!";
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("No File Error");
+        alert.setContentText(contentAlert);
+        alert.showAndWait();
+    }
+
+    private static void showSuccessEncryption(){
+        String contentInformation = "Enkripsi Berhasil\nSilahkan cek \"outputRsa.txt\"";
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Sukses");
+        alert.setContentText(contentInformation);
+        alert.showAndWait();
+    }
+
+    private static void showException(String error){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Stupid Error");
+        alert.setContentText(error);
+        alert.showAndWait();
+    }
+
+    private static void showFileIsNull(){
+        String contentAlert = "Isi File kosong. Enkripsi tidak dapat diproses";
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("No File Content");
+        alert.setContentText(contentAlert);
+        alert.showAndWait();
+    }
+
+    private static void showContentToBig(){
+        String contentAlert = "Isi File terlalu besar.\nMaksimal 1020 karakter";
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Content to big");
+        alert.setContentText(contentAlert);
+        alert.showAndWait();
+    }
+
+    private static List<Byte> readFileByte(File inputText){
+        List<Byte> byteList = new ArrayList<>();
+        if (inputText.isFile()){
+            try (FileInputStream fis = new FileInputStream(inputText)) {
+
+                int byteRead;
+                while ((byteRead = fis.read()) != -1) {
+                    byteList.add((byte) byteRead);
+                }
+                // Sekarang, byteArray berisi seluruh konten file dalam bentuk byte array
+            } catch (IOException err) {
+                showException(err.getMessage());
+            }
+
+        }else {
+            fileNotFound();
+        }
+        return byteList;
     }
 }
