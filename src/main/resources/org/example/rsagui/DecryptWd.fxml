@@ -26,25 +26,19 @@
          </font>
       </Button>
       <TextField layoutX="86.0" layoutY="67.0" prefHeight="26.0" prefWidth="625.0" />
-      <Text layoutX="55.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="q">
+      <Text layoutX="55.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="m">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Text>
       <TextField layoutX="86.0" layoutY="103.0" prefHeight="26.0" prefWidth="625.0" />
-      <Text layoutX="51.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="m">
+      <Text layoutX="55.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Text>
       <TextField layoutX="86.0" layoutY="145.0" prefHeight="26.0" prefWidth="625.0" />
-      <Text layoutX="55.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e">
-         <font>
-            <Font name="Arial Bold" size="24.0" />
-         </font>
-      </Text>
-      <TextField layoutX="86.0" layoutY="185.0" prefHeight="26.0" prefWidth="625.0" />
-      <Text layoutX="55.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="n">
+      <Text layoutX="55.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="n">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
