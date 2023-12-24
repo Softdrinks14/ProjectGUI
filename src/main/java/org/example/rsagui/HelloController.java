@@ -31,6 +31,7 @@ public class HelloController {
     @FXML
     private Button close;
 
+
     public void encryptButton() throws IOException{
         Stage stage = (Stage) encrypt.getScene().getWindow();
         stage.close();
@@ -65,6 +66,7 @@ public class HelloController {
         Stage stage = (Stage) close.getScene().getWindow();
         stage.close();
     }
+
 
     public void startEncrypt(ActionEvent actionEvent) {
         Alert alert = new Alert(INFORMATION);
