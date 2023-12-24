@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="674.0" styleClass="mainPane" stylesheets="@MainWindows.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.rsagui.HelloController">
+   <children>
+      <Text layoutX="241.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Teks Anda!" textAlignment="CENTER" wrappingWidth="200">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField layoutX="22.0" layoutY="56.0" prefHeight="103.0" prefWidth="636.0" />
+      <Button layoutX="262.0" layoutY="176.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" styleClass="mainButton" text="ENCRPYT">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font></Button>
+      <TextFlow layoutX="19.0" layoutY="258.0" prefHeight="126.0" prefWidth="636.0" />
+      <Button fx:id="back" layoutX="280.0" layoutY="424.0" mnemonicParsing="false" onAction="#backButton" prefHeight="36.0" prefWidth="111.0" styleClass="mainButton" text="Back">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
