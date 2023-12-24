@@ -4,9 +4,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="674.0" styleClass="mainPane" stylesheets="@MainWindows.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.rsagui.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="674.0" styleClass="mainPane" stylesheets="@MainWindows.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.rsagui.HelloController">
    <children>
       <Text layoutX="86.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harap masukkan character yang ingin anda enkripsi dalam sebuah file dengan nama &quot;inputRsa.txt&quot; dengan panjang maksimal 1020 character. Lokasi directory ialah sama dengan lokasi program ini!" textAlignment="CENTER" wrappingWidth="500.0">
          <font>
@@ -14,12 +13,11 @@
          </font>
       </Text>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Button layoutX="255.0" layoutY="192.0" mnemonicParsing="false" onAction="#startEncrypt" prefHeight="58.0" prefWidth="161.0" styleClass="mainButton" text="ENCRPYT">
+      <Button layoutX="259.0" layoutY="197.0" mnemonicParsing="false" onAction="#startEncrypt" prefHeight="58.0" prefWidth="161.0" styleClass="mainButton" text="ENCRPYT">
          <font>
             <Font name="Goudy Old Style Bold" size="18.0" />
          </font></Button>
-      <TextFlow layoutX="22.0" layoutY="281.0" prefHeight="126.0" prefWidth="636.0" />
-      <Button fx:id="back" layoutX="280.0" layoutY="424.0" mnemonicParsing="false" onAction="#backButton" prefHeight="36.0" prefWidth="111.0" styleClass="mainButton" text="Back">
+      <Button fx:id="back" layoutX="284.0" layoutY="303.0" mnemonicParsing="false" onAction="#backButton" prefHeight="36.0" prefWidth="111.0" styleClass="mainButton" text="Back">
          <font>
             <Font name="Goudy Old Style Bold" size="18.0" />
          </font>
