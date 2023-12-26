@@ -81,6 +81,6 @@ Setiap kontribusi dan bantuan dari anggota tim sangat dihargai. Berikut adalah p
 Ini adalah repositori untuk proyek Calculator RSA yang dikembangkan oleh tim berikut:
 
 - [Hisyam Bima Ekhsantama](https://github.com/Softdrinks14)
-- [Taufik Ramadhan](https://github.com/radan775)
+- [Taufiq Ramadhan](https://github.com/radan775)
 - [Rahmatullah Akbar Prima](https://github.com/Arabmeme)
 - [Bima Bhakti Brawijaya](https://github.com/BimmBB)
