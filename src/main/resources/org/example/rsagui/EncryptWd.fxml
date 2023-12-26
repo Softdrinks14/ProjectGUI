@@ -5,7 +5,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="674.0" styleClass="mainPane" stylesheets="@MainWindows.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.rsagui.HelloController">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="674.0" styleClass="mainPane" stylesheets="@MainWindows.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.rsagui.HelloController">
    <children>
       <Text layoutX="86.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harap masukkan character yang ingin anda enkripsi dalam sebuah file dengan nama &quot;inputRsa.txt&quot; dengan panjang maksimal 1020 character. Lokasi directory ialah sama dengan lokasi program ini!" textAlignment="CENTER" wrappingWidth="500.0">
          <font>
