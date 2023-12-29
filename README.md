@@ -22,7 +22,7 @@ Pengguna dapat memasukkan bilangan prima p, q, m, e, dan n yang sudah dihasilkan
 
 2. **Enkripsi**
     - Masukkan Karakter yang ingin akan di enkripsi.
-    - Form sederhana dengan input pesan berupa textfields maksimal 1020 character.
+    - Buat file dengan nama inputRsa.txt dengan maksimal 1020 character.
     - Tombol encrypt untuk proses menghitung enkripsi.
     - Hasil enkripsi akan ditampilkan pada file outputRsa.txt
 
@@ -31,8 +31,7 @@ Pengguna dapat memasukkan bilangan prima p, q, m, e, dan n yang sudah dihasilkan
 3. **Dekripsi**
     - Form sederhana dengan input bilangan m, p, q, e, dan n berupa textfields dengan tipe data 
     Big Integer.
-    - Tombol decrypt untuk proses menghitung dekripsi.
-    - Textbox untuk memunculkan hasil perhitungan dekripsi pesan.
+    - Tombol decrypt untuk proses menghitung dekripsi
     - Hasil dekripsi akan ditampilkan pada file dekripsiRsa.txt
 
 ![WhatsApp Image 2023-12-25 at 15 42 19_192456e6](https://github.com/BimmBB/Demo3/assets/144079933/b1c4c835-8508-44b1-ab88-0d2f69bd1df3)    
@@ -43,7 +42,7 @@ Pengguna dapat memasukkan bilangan prima p, q, m, e, dan n yang sudah dihasilkan
     - Klik pada opsi yang diinginkan untuk memulai proses.
 2. **Enkripsi**
     - Jika pengguna memilih opsi enkripsi, akan muncul form sederhana.
-    - Isi pesan yang ingin dienkripsi pada textfield yang tersedia (maksimal 1020 karakter).
+    - Isi pesan dengan menggunakan file bernama inputRsa.txt (maksimal 1020 karakter).
     - Setelah memasukkan pesan, klik tombol "Encrypt" untuk memulai proses enkripsi.
     - Hasil enkripsi akan ditampilkan pada antarmuka pengguna dan juga disimpan dalam file outputRsa.txt di direktori yang sama dengan program untuk menjaga keamanan nilai private value.
 
@@ -71,8 +70,8 @@ Pastikan untuk mengikuti langkah-langkah tersebut dengan cermat dan periksa file
 Setiap kontribusi dan bantuan dari anggota tim sangat dihargai. Berikut adalah peran masing-masing anggota:
 
 - **Softdrinks14**: Bertanggung jawab untuk bagian frontend dan desain antarmuka pengguna.
-- **radan775**: Mengelola backend dan struktur database.
-- **Arabmeme**: Mengelola backend dan struktur database.
+- **radan775**: Mengelola backend dan struktur data.
+- **Arabmeme**: Mengelola backend dan struktur data.
 - **BimmBB**: Mengelola dokumentasi. 
 
 ## Lisensi
