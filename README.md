@@ -76,6 +76,8 @@ Setiap kontribusi dan bantuan dari anggota tim sangat dihargai. Berikut adalah p
 
 ## Lisensi
 
+Proyek ini berada di bawah lisensi open source - GNU License
+- [Lisensi](https://id.wikipedia.org/wiki/Lisensi_Publik_Umum_GNU)
 
 
 ## Anggota Tim
