@@ -23,7 +23,8 @@ Pengguna dapat memasukkan bilangan prima p, q, m, e, dan n yang sudah dihasilkan
 2. **Enkripsi**
     - Masukkan Karakter yang ingin akan di enkripsi.
     - Form sederhana dengan input pesan berupa textfields maksimal 1020 character.
-    - Tombol encrypt untuk proses menghitung enkripsi. 
+    - Tombol encrypt untuk proses menghitung enkripsi.
+    - Hasil enkripsi akan ditampilkan pada file outputRsa.txt
 
 ![WhatsApp Image 2023-12-25 at 15 41 53_fe8c25c3](https://github.com/BimmBB/Demo3/assets/144079933/7070ae2c-d1f6-4195-904b-6670ad221ac1)
 
@@ -32,6 +33,7 @@ Pengguna dapat memasukkan bilangan prima p, q, m, e, dan n yang sudah dihasilkan
     Big Integer.
     - Tombol decrypt untuk proses menghitung dekripsi.
     - Textbox untuk memunculkan hasil perhitungan dekripsi pesan.
+    - Hasil dekripsi akan ditampilkan pada file dekripsiRsa.txt
 
 ![WhatsApp Image 2023-12-25 at 15 42 19_192456e6](https://github.com/BimmBB/Demo3/assets/144079933/b1c4c835-8508-44b1-ab88-0d2f69bd1df3)    
 
@@ -43,7 +45,7 @@ Pengguna dapat memasukkan bilangan prima p, q, m, e, dan n yang sudah dihasilkan
     - Jika pengguna memilih opsi enkripsi, akan muncul form sederhana.
     - Isi pesan yang ingin dienkripsi pada textfield yang tersedia (maksimal 1020 karakter).
     - Setelah memasukkan pesan, klik tombol "Calculate" untuk memulai proses enkripsi.
-    - Hasil enkripsi akan ditampilkan pada antarmuka pengguna dan juga disimpan dalam file inputRsa.txt di direktori yang sama dengan program untuk menjaga keamanan nilai private value.
+    - Hasil enkripsi akan ditampilkan pada antarmuka pengguna dan juga disimpan dalam file outputRsa.txt di direktori yang sama dengan program untuk menjaga keamanan nilai private value.
 
 Catatan : Pastikan untuk memeriksa file inputRsa.txt setelah proses enkripsi untuk melihat hasil enkripsi yang disimpan dalam file tersebut.
 
@@ -51,7 +53,7 @@ Catatan : Pastikan untuk memeriksa file inputRsa.txt setelah proses enkripsi unt
     - Jika pengguna memilih opsi dekripsi, akan muncul form sederhana untuk memasukkan nilai-nilai yang diperlukan.
     - Isi nilai-nilai seperti bilangan prima p, q, m, e, dan n pada textfield yang tersedia dengan tipe data Big Integer.
     - Setelah memasukkan nilai-nilai, klik tombol "Calculate" untuk memulai proses dekripsi.
-    - Hasil perhitungan dekripsi akan muncul pada textbox yang tersedia.
+    - Hasil dekripsi akan ditampilkan pada antarmuka pengguna dan juga disimpan dalam file dekripsiRsa.txt di direktori yang sama dengan program untuk menjaga keamanan nilai private value.
 
 ## Persyaratan Teknis
     - Bahasa Pemrograman: Program dikembangkan menggunakan Java 11+.
