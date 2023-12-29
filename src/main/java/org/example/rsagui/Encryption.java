@@ -18,10 +18,12 @@ public class Encryption {
         List<Byte> byteList = readFileByte(inputText);
         if (byteList.size() <= 0){
             showFileIsNull();
+            return;
         }
 
         if (byteList.size() > 1020){
             showContentToBig();
+            return;
         }
 
         byte[] byteArray = new byte[byteList.size()];
@@ -33,6 +35,7 @@ public class Encryption {
             encrypt(byteArray, e);
         } catch (Exception error) {
             showException(error.getMessage());
+            return;
         }
     }
 

@@ -1,7 +1,6 @@
 package org.example.rsagui;
 
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 
 import java.io.FileWriter;
@@ -44,7 +43,7 @@ public class Decryption {
             showResult(result);
 
             FileWriter file = new FileWriter("dekripsiRsa.txt");
-            file.write("Hasil enkripsi : " + result);
+            file.write("Hasil enkripsi : \n" + result);
             file.close();
         } catch (Exception err) {
             showUnknownException(err.getMessage());
