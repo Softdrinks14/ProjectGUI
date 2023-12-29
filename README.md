@@ -44,7 +44,7 @@ Pengguna dapat memasukkan bilangan prima p, q, m, e, dan n yang sudah dihasilkan
 2. **Enkripsi**
     - Jika pengguna memilih opsi enkripsi, akan muncul form sederhana.
     - Isi pesan yang ingin dienkripsi pada textfield yang tersedia (maksimal 1020 karakter).
-    - Setelah memasukkan pesan, klik tombol "Calculate" untuk memulai proses enkripsi.
+    - Setelah memasukkan pesan, klik tombol "Encrypt" untuk memulai proses enkripsi.
     - Hasil enkripsi akan ditampilkan pada antarmuka pengguna dan juga disimpan dalam file outputRsa.txt di direktori yang sama dengan program untuk menjaga keamanan nilai private value.
 
 Catatan : Pastikan untuk memeriksa file inputRsa.txt setelah proses enkripsi untuk melihat hasil enkripsi yang disimpan dalam file tersebut.
@@ -52,7 +52,7 @@ Catatan : Pastikan untuk memeriksa file inputRsa.txt setelah proses enkripsi unt
 3. **Dekripsi**
     - Jika pengguna memilih opsi dekripsi, akan muncul form sederhana untuk memasukkan nilai-nilai yang diperlukan.
     - Isi nilai-nilai seperti bilangan prima p, q, m, e, dan n pada textfield yang tersedia dengan tipe data Big Integer.
-    - Setelah memasukkan nilai-nilai, klik tombol "Calculate" untuk memulai proses dekripsi.
+    - Setelah memasukkan nilai-nilai, klik tombol "Decrypt" untuk memulai proses dekripsi.
     - Hasil dekripsi akan ditampilkan pada antarmuka pengguna dan juga disimpan dalam file dekripsiRsa.txt di direktori yang sama dengan program untuk menjaga keamanan nilai private value.
 
 ## Persyaratan Teknis
